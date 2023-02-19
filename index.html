@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CryptoLending</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+
+</head>
+<body>
+  <h1>CryptoLending</h1>
+  <form>
+    <label>Borrower address:</label>
+    <input type="text" id="borrower">
+    <br>
+    <label>Amount (in ETH):</label>
+    <input type="text" id="amount">
+    <br>
+    <label>Interest rate (in %):</label>
+    <input type="text" id="interestRate">
+    <br>
+    <button type="button" onclick="lend()">Lend</button>
+  </form>
+  <br>
+  <table id="loanTable">
+    <thead>
+      <tr>
+        <th>Borrower</th>
+        <th>Lender</th>
+        <th>Amount (ETH)</th>
+        <th>Interest rate (%)</th>
+        <th>Status</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <br>
+  <p id="loanCountLabel"></p>
+  <script src="script.js"></script>
+</body>
+</html>
